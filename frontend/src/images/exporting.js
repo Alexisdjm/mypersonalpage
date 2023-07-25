@@ -42,7 +42,8 @@ const images = {
     engineer: require('./icons/engineer.png'),
     graduation: require('./icons/graduation-hat.png'),
     fontawesome: require('./icons/fontawesome.png'),
-    check: require('./icons/check-gif.gif')
+    check: require('./icons/check-gif.gif'),
+    condimentos: require('./projects/condimentos.png')
 }
 
 export default images

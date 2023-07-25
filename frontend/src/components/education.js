@@ -16,7 +16,6 @@ const Education = () => {
             <>
                 <h3 className='degree-name'>{title}</h3>
                 <p className='degree-desc'>{content}</p>
-                <button className='degree-btn'>Learn more</button>
             </>
         )
     }

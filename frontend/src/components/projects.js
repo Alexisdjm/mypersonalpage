@@ -20,10 +20,10 @@ const Projects = () => {
         <div id='projects' className='projects-container'>
             <h4 className='skills-title'>Projects</h4>
             <section id='projects-container' className='project-gallery'>
-                <div className='flex-center project-box' style={{backgroundImage: `url(${images.nurture})`}}>
+                <div className='flex-center project-box' style={{backgroundImage: `url(${images.condimentos})`}}>
                     <div className='project-name-container'>
-                        <h6 className='project-name'>Nurture Parenting</h6>
-                        <p className='identifier'>(Shopify theme)</p>
+                        <h6 className='project-name'>La Casa de los Condimentos</h6>
+                        <p className='identifier'>Django rest Framework and React.js</p>
                     </div>
                 </div>
                 <div className='flex-center project-box' style={{backgroundImage: `url(${images.swissgetal})`}}>  

@@ -52,7 +52,7 @@ function Header() {
                         <img src={images.mylogo} className='footer-logo logo-sidebar-margin' alt='logo'></img>
                         <div className='links-container-footer'>
                             <div className='flex-link'>
-                                <Link to='/' className='link-footer' onClick={() => {ScrollToTop('/')}}>Inicio</Link>
+                                <Link to='/' className='link-footer' onClick={() => {ScrollToTop('/')}}>Home</Link>
                             </div>
                             <div className='flex-link'>
                                 <Link to='/about' className='link-footer' onClick={() => {ScrollToTop('/about')}}>About me</Link>
