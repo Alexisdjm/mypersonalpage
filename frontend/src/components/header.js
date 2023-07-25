@@ -80,7 +80,7 @@ function Header() {
                     </div>
                     <div className="links-container">
                         <div className='flex-link'>
-                            <Link to='/' className='link' onClick={() => {ScrollToTop('/')}}>Inicio</Link>
+                            <Link to='/' className='link' onClick={() => {ScrollToTop('/')}}>Home</Link>
                         </div>
                         <div className='flex-link'>
                             <Link to='/about' className='link' onClick={() => {ScrollToTop('/about')}}>About me</Link>
