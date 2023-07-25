@@ -776,7 +776,7 @@ div.show-sidebar {
 
 .icons-about-dimensions {
   width: 85px;
-  height: 85px;
+  aspect-ratio: 1/1;
   opacity: .7;
 }
 
