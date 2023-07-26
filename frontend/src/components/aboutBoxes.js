@@ -4,7 +4,7 @@ import images from "../images/exporting";
 const Boxes = () => {
 
     const content = {
-        myself: 'My name is Alexis David Jiménez Mendoza, I am 22 years old, I am from Barquisimeto, Venezuela, electronic engineer and Full Stack Web Developer. I completed my studies in electronic engineer and my certification at edx Harvard as a Full Stack Web Developer in 2022. I currently work as a frontend web developer at the meraki vision agency. In my job, I am responsible for shopify themes development, user interface design, creating new features, installing and configuring apps. My passion is technology, especially software development, that is why in my free time, I am practicing and learning code, in order to improve my skills, ability to solve problems and learn about new technologies such as frameworks, development tools, libraries, new languages ​​and anything related to technology.',
+        myself: 'My name is Alexis David Jiménez Mendoza, I am 23 years old, I am from Barquisimeto, Venezuela, electronic engineer and Full Stack Web Developer. I completed my studies in electronic engineer and my certification at edx Harvard as a Full Stack Web Developer in 2022. I currently work as a frontend web developer at Meraki Vision agency. In my job, I am responsible for shopify themes development, user interface design, creating new features, installing and configuring apps. My passion is technology, especially software development, that is why in my free time, I am practicing and learning code, in order to improve my skills, ability to solve problems and learn about new technologies such as frameworks, development tools, libraries, new languages ​​and anything related to technology.',
         developer: 'I am a Full Stack Web Developer, I really like the front end and UX UI design,  however, I am very interested in backend, SQL, non SQL databases and more. I am extremely demanding with my work, always focusing on implementing  code following the best practices and guaranteening the functionality of the project.',
         backend: 'As a Full Stack developer, in my experience I have needed to learn concepts and use technologies related to backend or website functionality. I currently use django, which is a backend framework that uses python as its language. However I am interested in learning more and studying new technologies like Node.js, Express.js, Fast API, Flask, SQL databases and more.',
         frontend: 'In my projects, I usually focus a lot on the visual part and everything related to the frontend. As a developer, I use HTML and css, plus I feel very comfortable working with javascript and CSS frameworks like Bootstrap and TailwindCSS. Currently, I use React.js to create the interfaces in my projects, however, I want to learn how to use different technologies like vue.js, solid.js and frontend frameworks like Angular.',
@@ -14,13 +14,15 @@ const Boxes = () => {
         hobbies: 'In my free time, I play video games. I really like the games of the call of duty saga, overwatch, Titanfall, Battlefield, fromsoftware games, playstation exclusives and single player games. On the other hand, I really like science fiction movies, especially those related to technology like Ironman, Pacific rim, Alien and Starwars.'
     }
 
-    const Images = ({css, img1, img2, img3, img4}) => {
+    const Images = ({css, img1, img2, img3, img4, img5, img6}) => {
         return(
             <div className={css}>
                 { img1 ? <img className="icons-about-dimensions" src={img1} alt='icon'></img> : '' }
                 { img2 ? <img className="icons-about-dimensions" src={img2} alt='icon'></img> : '' }
                 { img3 ? <img className="icons-about-dimensions" src={img3} alt='icon'></img> : '' }
                 { img4 ? <img className="icons-about-dimensions" src={img4} alt='icon'></img> : '' }
+                { img5 ? <img className="icons-about-dimensions" src={img5} alt='icon'></img> : '' }
+                { img6 ? <img className="icons-about-dimensions" src={img6} alt='icon'></img> : '' }
             </div>
         )
     }
@@ -80,13 +82,13 @@ const Boxes = () => {
                 </Carousel>
             </div>
             <div className="flex-center card-space-gap container-dimensions-dev">
-                <div className="flex-col card-space-gap dev-dimensions">
-                    <div id="developer" className="card-align-bg flex-col align-center">
+                <div id="developer" className="flex-col card-space-gap dev-dimensions">
+                    <div className="card-align-bg flex-col align-center">
                         <h4 className="about-boxes-title justify-center-text">As A Developer</h4>
                         <p className="page-content justify-center-text myself-content optional-margin">{content.developer}</p>
                         <Images css='flex-center align-center icons-gap-50 developer-img-2' img1={images.web} img2={images.javascript} img3={images.css} img4={images.python}/>
                     </div>
-                    <div id="backend" className="card-align-bg flex-col align-center">
+                    <div className="card-align-bg flex-col align-center">
                         <h4 className="about-boxes-title justify-center-text">In Backend</h4>
                         <p className="page-content justify-center-text myself-content optional-margin">{content.backend}</p>
                         <Images css='simple-flex space-between icons-container-w' img1={images.django} img2={images.python} img3={images.postgre}/>
@@ -112,14 +114,7 @@ const Boxes = () => {
                 <div id="frontend" className="card-align-bg frontend-card flex-col align-center card-space-gap">
                     <h4 className="about-boxes-title justify-center-text">In Frontend</h4>
                     <p className="page-content justify-center-text myself-content">{content.frontend}</p>
-                    <div className="flex-wrap-images">
-                        <img className="icons-about-dimensions" src={images.html} alt='icon'></img>
-                        <img className="icons-about-dimensions" src={images.css} alt='icon'></img>
-                        <img className="icons-about-dimensions" src={images.javascript} alt='icon'></img>
-                        <img className="icons-about-dimensions" src={images.reactlogo} alt='icon'></img>
-                        <img className="icons-about-dimensions" src={images.tailwindcss} alt='icon'></img>
-                        <img className="icons-about-dimensions" src={images.bootstrap} alt='icon'></img>
-                    </div>
+                    <Images css='flex-wrap-images' img1={images.html} img2={images.css} img3={images.javascript} img4={images.reactlogo} img5={images.tailwindcss} img6={images.bootstrap}/>
                 </div>
             </div>
             <div className="my-resume-container flex-center card-space-gap">

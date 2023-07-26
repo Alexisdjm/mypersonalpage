@@ -1416,5 +1416,9 @@ div.show-sidebar {
   .myself-text-container {
     max-width: 85%;
   }
+
+  .social-media-menu {
+    right: 3%;
+  }
 }
 
