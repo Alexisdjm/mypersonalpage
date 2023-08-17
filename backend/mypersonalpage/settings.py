@@ -32,7 +32,7 @@ EMAIL_HOST_PASSWORD = 'xrhjuowyzvmkhkzh'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-ALLOWED_HOSTS = ['alexiswebworks.com', 'www.alexiswebworks.com']
+ALLOWED_HOSTS = ['alexiswebworks.com', 'www.alexiswebworks.com', '127.0.0.1']
 
 
 # Application definition
@@ -63,7 +63,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build')
+            # os.path.join(BASE_DIR, '../frontend/build')
+            '/root/mypersonalpage/frontend/build'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -134,5 +135,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_DIRS = [
-     os.path.join(BASE_DIR, '../frontend/build/static')
+    #  os.path.join(BASE_DIR, '../frontend/build/static')
+    '/root/mypersonalpage/frontend/build/static'
 ]
