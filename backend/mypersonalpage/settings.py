@@ -129,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/admin')
 
 
 # Default primary key field type
@@ -140,5 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     #   
-    os.path.join(BASE_DIR, 'staticfiles/admin')
+    os.path.join(BASE_DIR, '../frontend/build/static')
 ]
