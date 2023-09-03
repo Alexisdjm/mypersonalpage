@@ -32,7 +32,7 @@ EMAIL_HOST_PASSWORD = 'xrhjuowyzvmkhkzh'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-ALLOWED_HOSTS = ['alexiswebworks.com', 'www.alexiswebworks.com', '127.0.0.1']
+ALLOWED_HOSTS = ['alexiswebworks.com', 'www.alexiswebworks.com', '127.0.0.1', '147.182.178.136']
 
 
 # Application definition
