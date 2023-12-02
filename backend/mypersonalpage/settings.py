@@ -32,13 +32,14 @@ EMAIL_HOST_PASSWORD = 'xrhjuowyzvmkhkzh'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-ALLOWED_HOSTS = ['alexiswebworks.com', 'www.alexiswebworks.com', '127.0.0.1', '142.93.180.243', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'core',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -60,6 +62,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mypersonalpage.urls'
+
+# CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
+
+# CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000"
+]
 
 TEMPLATES = [
     {

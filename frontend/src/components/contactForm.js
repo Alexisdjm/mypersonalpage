@@ -21,7 +21,7 @@ const Contact = () => {
     const handlesubmit = (e) => {
         e.preventDefault();
         console.log(formvalue)
-        fetch('/api/compose', {
+        fetch('http://127.0.0.1:8000/api/compose', {
             method: 'POST',
             headers:{
                 'Content-Type':'application/json',
